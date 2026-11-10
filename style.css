@@ -96,3 +96,24 @@ main {
     flex: 1 1 100%;
   }
 }
+/* Photo carousel */
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+.carousel img {
+  flex: 0 0 85%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  scroll-snap-align: center;
+}
+/* Bigger screens: show about two photos at a time */
+@media (min-width: 700px) {
+  .carousel img {
+    flex-basis: 45%;
+  }
+}
