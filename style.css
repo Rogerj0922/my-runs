@@ -90,3 +90,9 @@ main {
   font-style: italic;
   color: #555;
 }
+/* Phones: one full-width card per row */
+@media (max-width: 600px) {
+  .run-card {
+    flex: 1 1 100%;
+  }
+}
