@@ -153,3 +153,33 @@ main {
 .post-body p {
   line-height: 1.7;
 }
+/* Read more button */
+.read-more summary {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  background: #fc4c02;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  margin: 0.5rem 0 1rem;
+}
+.read-more summary::-webkit-details-marker {
+  display: none;
+}
+.read-more summary:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 3px;
+}
+
+/* Swap the button text when open */
+.read-more .less {
+  display: none;
+}
+.read-more[open] .less {
+  display: inline;
+}
+.read-more[open] .more {
+  display: none;
+}
